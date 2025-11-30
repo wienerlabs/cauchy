@@ -12,6 +12,7 @@
 
 #include "../types.h"
 #include "../memory.h"
+#include "../vclock.h"
 
 #ifdef __cplusplus
 extern "C" {
