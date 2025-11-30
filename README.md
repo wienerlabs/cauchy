@@ -169,29 +169,6 @@ Encrypt CRDT state at rest and in transit. Homomorphic properties of some CRDTs 
 **Access Control:**
 Attach capability tokens to operations. Merge operations validate token permissions before state updates. Decentralized authorization without central access control server.
 
-## Implementation Roadmap
-
-### Phase 1: Core CRDT Library (Months 1-2)
-Implement fundamental CRDT types in C: G-Counter, PN-Counter, LWW-Register, OR-Set, RGA. Comprehensive test suite validating convergence properties through randomized operation sequences.
-
-### Phase 2: Vector Clock System (Month 3)
-Develop vector clock implementation with efficient comparison algorithms. Implement garbage collection for bounded space usage. Validate causality preservation through property-based testing.
-
-### Phase 3: Lock-Free Concurrency (Months 4-5)
-Implement atomic operations using C11 atomics. Develop hazard pointer memory reclamation. Benchmark concurrent performance across thread counts. Validate correctness under race conditions.
-
-### Phase 4: Network Protocol (Months 6-7)
-Design wire protocol for CRDT synchronization. Implement anti-entropy gossip protocol for state dissemination. Develop delta-state CRDTs minimizing network bandwidth. Optimize serialization for minimal overhead.
-
-### Phase 5: Storage Engine (Month 8)
-Build persistent storage layer using memory-mapped files. Implement write-ahead logging for crash recovery. Develop snapshot and incremental backup mechanisms. Optimize for SSD characteristics.
-
-### Phase 6: Query Engine (Months 9-10)
-Create query language supporting CRDT semantics. Implement indexing structures compatible with eventual consistency. Develop query optimization for distributed execution. Support causal consistency queries.
-
-### Phase 7: Production Hardening (Months 11-12)
-Comprehensive performance testing under production workloads. Security audit and penetration testing. Operational tooling: monitoring, debugging, profiling. Documentation and deployment guides.
-
 ## Comparison with Existing Systems
 
 ### vs Raft/Paxos Databases

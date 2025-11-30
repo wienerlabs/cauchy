@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+.deps/
 
 # Object files
 *.o
@@ -51,5 +52,55 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# debug information files
+# Debug information files
 *.dwo
+
+# Build directories
+build/
+bin/
+lib/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Profiling and coverage
+*.gcda
+*.gcno
+*.gcov
+callgrind.out.*
+perf.data*
+*.prof
+coverage/
+*.lcov
+
+# Sanitizer logs
+asan.log*
+tsan.log*
+msan.log*
+ubsan.log*
+
+# Test and benchmark outputs
+test_results/
+benchmark_results/
+*.tap
+
+# Core dumps
+core
+core.*
+vgcore.*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Generated files
+compile_commands.json
+*.gen.h
+*.gen.c
