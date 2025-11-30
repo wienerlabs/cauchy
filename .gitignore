@@ -90,9 +90,9 @@ test_results/
 benchmark_results/
 *.tap
 
-# Core dumps
-core
-core.*
+# Core dumps (not src/core directory)
+/core
+/core.*
 vgcore.*
 
 # Temporary files
