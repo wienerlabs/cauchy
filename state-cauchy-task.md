@@ -27,9 +27,9 @@ Production-grade distributed database in pure C implementing CRDTs with mathemat
 - [x] G-Counter (Grow-only Counter) + tests
 - [x] PN-Counter (Positive-Negative Counter)
 - [x] LWW-Register (Last-Write-Wins Register)
-- [ ] G-Set (Grow-only Set)
-- [ ] 2P-Set (Two-Phase Set)
-- [ ] OR-Set (Observed-Remove Set)
+- [x] G-Set (Grow-only Set)
+- [x] 2P-Set (Two-Phase Set)
+- [x] OR-Set (Observed-Remove Set)
 - [ ] LWW-Map (Last-Write-Wins Map)
 - [ ] RGA (Replicated Growable Array)
 
